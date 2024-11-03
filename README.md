@@ -13,20 +13,16 @@ Ovviamente ha un **gestore** per l'aggiunta e la modifica dei ruoli
 ## Stato di completamento:
 
 - [x] Struttura base
-- [] PWA
-    - [] favicon
-    - [] manifest
-    - [] service-worker
-- [] Scelta del giorno
-- [] Visione dei ruoli
-- [] Segnalazione Bug
-- [] Segnalazione Cambiamenti
-- [] Gestore per aggiunta e modifica dei ruoli
+- [ ] PWA
+    - [ ] favicon
+    - [ ] manifest
+    - [ ] service-worker
+- [ ] Scelta del giorno
+- [ ] Visione dei ruoli
+- [ ] Segnalazione Bug
+- [ ] Segnalazione Cambiamenti
+- [ ] Gestore per aggiunta e modifica dei ruoli
 
 ---
 
 Lo sviluppatore di tutto questo è @loperfido
-
-Questo è un testo con una footnote.[^nota1]
-
-[^nota1]: Questa è la nota.
