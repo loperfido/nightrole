@@ -12,16 +12,16 @@ Ovviamente ha un **gestore** per l'aggiunta e la modifica dei ruoli
 
 ## Stato di completamento:
 
-[*] Struttura base
-[] PWA
+- [x] Struttura base
+- [] PWA
     - [] favicon
     - [] manifest
     - [] service-worker
-[] Scelta del giorno
-[] Visione dei ruoli
-[] Segnalazione Bug
-[] Segnalazione Cambiamenti
-[] Gestore per aggiunta e modifica dei ruoli
+- [] Scelta del giorno
+- [] Visione dei ruoli
+- [] Segnalazione Bug
+- [] Segnalazione Cambiamenti
+- [] Gestore per aggiunta e modifica dei ruoli
 
 ---
 
