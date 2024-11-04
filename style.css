@@ -8,6 +8,7 @@ body {
     text-align: left;
     font-family: monospace;
     margin: 0;
+
 }
 
 h1 {
@@ -20,16 +21,34 @@ h1 b {
     font-weight: 900;
 }
 
-h2 {
+h1 r {
+    font-size: 20px;
+    margin-left: 15px;
     font-weight: 500;
-    margin-left: 30px;
 }
 
-div {}
-
-div a {
+div {
+    height: 300px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
     width: 80%;
     margin-left: 10%;
+
+    /* Nasconde la barra di scorrimento */
+    scrollbar-width: none;
+    /* Nascondere la barra di scorrimento su FireFox*/
+    overflow-y: scroll;
+    /* Abilita lo scorrimento fluido su iOS */
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Nasconde la barra di scorrimento su Chrome, Safari e Edge */
+div::-webkit-scrollbar {
+    display: none;
+}
+
+div a {
+    width: 100%;
     color: black;
     text-decoration: none;
     padding: 5px;
@@ -44,8 +63,6 @@ div a:hover {
 }
 
 div hr {
-    width: 85%;
-    margin-left: 7.5%;
     border: 1px solid grey;
 }
 
@@ -53,16 +70,195 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    text-align: center;
+
+    display: flex;
 }
 
 footer a {
     color: black;
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    font-size: 15px;
+    text-decoration: none;
+    font-size: 11px;
+    padding-bottom: 20px;
+
 }
 
-footer .sinistra {}
+footer .sinistra {
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
 
-footer .centro {}
+footer .destra {
+    width: 50%;
+    text-align: right;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+article {
+    width: 80%;
+    margin-left: 10%;
+    height: 452px;
+
+    /* Nasconde la barra di scorrimento */
+    scrollbar-width: none;
+    /* Nascondere la barra di scorrimento su FireFox*/
+    overflow-y: scroll;
+    /* Abilita lo scorrimento fluido su iOS */
+    -webkit-overflow-scrolling: touch;
+
+    position: relative;
+}
+
+/* Nasconde la barra di scorrimento su Chrome, Safari e Edge */
+article::-webkit-scrollbar {
+    display: none;
+}
+
+article h2 {
+    font-size: 23px;
+    font-weight: 600;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+article p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+article p a {
+    color: #00001f;
+
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+#label_mail {
+    color: darkgoldenrod;
+    position: absolute;
+    top: 49px;
+    left: 20px;
+    background-color: #ffffe0;
+    /* Colore di sfondo per nascondere il bordo */
+    padding: 0 3px;
+    /* Spazio attorno al testo */
+    font-size: 10px;
+    display: none;
+}
+
+#label_testo {
+    color: darkgoldenrod;
+    position: absolute;
+    top: 109px;
+    left: 20px;
+    background-color: #ffffe0;
+    /* Colore di sfondo per nascondere il bordo */
+    padding: 0 3px;
+    /* Spazio attorno al testo */
+    font-size: 10px;
+    display: none;
+}
+
+article input {
+    margin: 0;
+    width: 92%;
+    font-size: 15px;
+
+    appearance: none;
+    /* Disabilita lo stile di default */
+    -webkit-appearance: none;
+    /* Per i browser WebKit */
+    -moz-appearance: none;
+    /* Per Firefox */
+    outline: none;
+    /* toglie il bordo nel focus*/
+
+    background-color: #ffffe0;
+    border: 3px solid #00001f31;
+    border-radius: 3px;
+
+    margin-top: 0px;
+    padding: 10px;
+    transition: 0.3 ease-in-out;
+}
+
+article textarea {
+    margin: 0;
+    width: 92%;
+    font-size: 15px;
+    outline: none;
+    background-color: #ffffe0;
+    border: 3px solid #00001f31;
+    border-radius: 3px;
+
+    margin-top: 0px;
+    padding: 10px;
+    transition: 0.3 ease-in-out;
+    max-width: 92%;
+    min-width: 92%;
+
+    min-height: 150px;
+    height: 150px;
+}
+
+
+textarea::placeholder {
+    color: #cece9e91;
+    opacity: 1;
+}
+
+input::placeholder {
+    color: #cece9e91;
+    opacity: 1;
+}
+
+/* Stile per il focus */
+input:focus {
+    border: 3px solid darkgoldenrod;
+}
+
+textarea:focus {
+    border: 3px solid darkgoldenrod;
+}
+
+button {
+    background-color: #00001f31;
+    color: #ffffe0;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 4px;
+    border: 0px solid transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+
+button:hover {
+    background-color: #00001f66;
+    color: #ffffff;
+}
+
+button:focus {
+    background-color: #0f8c2cc7;
+}
+
+article p {
+    margin-top: 2px;
+    font-weight: 100;
+    opacity: 20%;
+    font-size: 10px;
+}

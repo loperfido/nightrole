@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus e Placeholder</title>
+    <style>
+        /* Stile per il label inizialmente trasparente */
+        #label_mail {
+            opacity: 0;
+            /* Inizialmente trasparente */
+            transition: opacity 0.3s;
+            /* Transizione per l'opacità */
+        }
+
+        /* Stile per il label quando è visibile */
+        #input_mail:focus+#label_mail {
+            opacity: 1;
+            /* Rende visibile il label quando l'input è in focus */
+        }
+
+        /* Stile per l'input */
+        input {
+            margin-bottom: 10px;
+            /* Spazio sotto l'input */
+        }
+    </style>
+</head>
+
+<body>
+
+    <input id="input_mail" type="email" placeholder="E-Mail o numero di telefono">
+    <label id="label_mail" for="input_mail">Inserisci E-Mail o Numero di telefono</label><br>
+
+    <script>
+        // Seleziona l'input
+        const inputMail = document.getElementById('input_mail');
+
+        // Aggiungi un event listener per il focus sull'input
+        inputMail.addEventListener('focus', function () {
+            inputMail.setAttribute('placeholder', ''); // Nasconde il placeholder
+        });
+
+        // Aggiungi un event listener per il blur (quando il focus esce dall'input)
+        inputMail.addEventListener('blur', function () {
+            inputMail.setAttribute('placeholder', 'E-Mail o numero di telefono'); // Ripristina il placeholder
+        });
+    </script>
+
+</body>
+
+</html>

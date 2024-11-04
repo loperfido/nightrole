@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 onclick="window.location.href='index.html'"><b>Night</b>Role<r>- Bug</r>
+    </h1>
+
+    <br><br><br>
+
+    <article>
+        <h2>Segnala un Bug</h2>
+        <form action="">
+            <label id="label_mail" for="">Inserisci E-Mail o Numero di telefono</label><br>
+            <input required id="input_mail" type="email" placeholder="E-Mail o Numero di telefono">
+            <br>
+            <label id="label_testo" for="">Inserisci il Bug</label><br>
+            <textarea required name="" id="input_testo" placeholder="Inserisci il Bug"></textarea>
+            <br>
+            <p>* L'E-Mail verrà usata solo per ulteriori chiarimenti.</p>
+            <br><br>
+            <button type="submit">INVIA SEGNALAZIONE BUG</button>
+        </form>
+    </article>
+
+    <footer>
+        <a class="sinistra" href=""></a>
+        <a class="destra" href="info.html">?</a>
+    </footer>
+
+    <script>
+
+        const label_mail = document.getElementById('label_mail');
+        const input_mail = document.getElementById('input_mail');
+        const label_testo = document.getElementById('label_testo');
+        const input_testo = document.getElementById('input_testo');
+
+        input_mail.addEventListener('focus', function () {
+            label_mail.style.display = 'block';
+            input_mail.setAttribute('placeholder', '');
+        });
+
+        input_mail.addEventListener('blur', function () {
+            label_mail.style.display = 'none';
+            input_mail.setAttribute('placeholder', 'E-Mail o numero di telefono');
+        });
+
+        input_testo.addEventListener('focus', function () {
+            label_testo.style.display = 'block';
+            input_testo.setAttribute('placeholder', '');
+        });
+
+        input_testo.addEventListener('blur', function () {
+            label_testo.style.display = 'none';
+            input_testo.setAttribute('placeholder', 'Inserisci il Bug');
+        });
+    </script>
+</body>
+
+</html>
