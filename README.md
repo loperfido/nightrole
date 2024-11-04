@@ -25,4 +25,12 @@ Ovviamente ha un **gestore** per l'aggiunta e la modifica dei ruoli
 
 ---
 
+# Versionamento
+
+- Major: Aggiunte/cambiamenti drastici.
+- Minor: Aggiunta di nuove funzionalità.
+- Patch: Correzione do Bug.
+
+---
+
 Lo sviluppatore di tutto questo è @loperfido
