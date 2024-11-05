@@ -1,6 +1,6 @@
 # NightRole
 
-[loperfido.github.io/nightrole]([https://github.com](https://loperfido.github.io/nightrole/))
+[loperfido.github.io/nightrole](https://loperfido.github.io/nightrole)
 
 ## Che cosa è?
 NightRole è una PWA che permette di vedere tutte le persone che stanno in programma una determinta sera.
