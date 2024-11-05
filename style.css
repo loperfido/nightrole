@@ -23,7 +23,7 @@ h1 b {
 }
 
 h1:hover {
-    animation: animazione_h1 2s;
+    animation: animazione_h1 1s;
 }
 
 @keyframes animazione_h1 {
