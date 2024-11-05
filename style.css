@@ -15,10 +15,41 @@ h1 {
     font-size: 40px;
     font-weight: 100;
     margin-left: 20px;
+    transition: all 0.2s ease-in-out;
 }
 
 h1 b {
     font-weight: 900;
+}
+
+h1:hover {
+    animation: animazione_h1 2s;
+}
+
+@keyframes animazione_h1 {
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+
+    20% {
+        transform: translateX(-20px) translateY(-20px);
+    }
+
+    40% {
+        transform: translateX(20px) translateY(-20px);
+    }
+
+    60% {
+        transform: translateX(20px) translateY(20px);
+    }
+
+    80% {
+        transform: translateX(-20px) translateY(20px);
+    }
+
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
 }
 
 h1 r {
@@ -29,8 +60,8 @@ h1 r {
 
 div {
     height: 300px;
-    border-top: 2px solid grey;
-    border-bottom: 2px solid grey;
+    border-top: 2px solid #00001f66;
+    border-bottom: 2px solid #00001f66;
     width: 80%;
     margin-left: 10%;
 
@@ -53,7 +84,7 @@ div a {
     text-decoration: none;
     padding: 5px;
     border-left: 3px solid transparent;
-
+    transition: all 0.2s ease-in-out;
 }
 
 div a:hover {
@@ -63,7 +94,7 @@ div a:hover {
 }
 
 div hr {
-    border: 1px solid grey;
+    border: 1px solid #00001f66;
 }
 
 footer {
@@ -80,6 +111,10 @@ footer a {
     font-size: 11px;
     padding-bottom: 20px;
 
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 footer .sinistra {
@@ -256,7 +291,7 @@ button:focus {
     background-color: #0f8c2cc7;
 }
 
-article p {
+article t {
     margin-top: 2px;
     font-weight: 100;
     opacity: 20%;
