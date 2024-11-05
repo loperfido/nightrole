@@ -99,6 +99,8 @@ div hr {
 
 footer {
     position: absolute;
+    position: fixed;
+
     bottom: 0;
     width: 100%;
 
@@ -109,8 +111,9 @@ footer a {
     color: black;
     text-decoration: none;
     font-size: 11px;
-    padding-bottom: 20px;
-
+    padding-bottom: 15px;
+    background-color: #ffffe0;
+    padding-top: 10px;
 }
 
 footer a:hover {
@@ -135,7 +138,7 @@ footer .destra {
 article {
     width: 80%;
     margin-left: 10%;
-    height: 452px;
+    height: 470px;
 
     /* Nasconde la barra di scorrimento */
     scrollbar-width: none;
@@ -296,4 +299,87 @@ article t {
     font-weight: 100;
     opacity: 20%;
     font-size: 10px;
+}
+
+/*  Date  */
+
+nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: #e0e0af;
+    border-bottom: 3px solid darkgoldenrod;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav .sinistra {
+    width: 28%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+nav .centro {
+    width: 33%;
+    text-align: center;
+}
+
+nav .destra {
+    width: 20%;
+    text-align: right;
+
+}
+
+nav .destra_destra {
+    width: 2%;
+    text-align: right;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.span {
+    width: 90%;
+    margin-left: 5%;
+    height: 550px;
+}
+
+.span p {
+    text-align: center;
+    border: 1px solid #ffffe0;
+    border-bottom: 0px;
+    font-weight: 800;
+    background-color: darkgoldenrod !important;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #dddd9b;
+}
+
+td {
+    width: 50%;
+    /* colore bordi */
+    border: 2px solid #ffffe0;
+    padding: 5px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #e0e0af;
 }
